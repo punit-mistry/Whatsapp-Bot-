@@ -11,7 +11,7 @@ const client = new Client();
 
 
 // Load the session data if it has been previously saved
-
+ 
 
 // Use the saved values
 
@@ -76,7 +76,7 @@ console.log(olddate.toShortFormat(),"sdfs",newdate1.toShortFormat())
           url: ['http://api.apml.in/Reports.svc/BookingSalesRegisterReport?StartDocketDate='+olddate.toShortFormat()+'&EndDocketDate='+newdate1.toShortFormat()+'&PageLimit=500&PageNumber=1'+
         'http://api.apml.in/Reports.svc/BookingSalesRegisterReport?StartDocketDate='+olddate.toShortFormat()+'&EndDocketDate='+newdate1.toShortFormat()+'&PageLimit=500&PageNumber=2'],
           headers: { 
-            'Authorization': 'Basic UmVwb3J0czpSZVAwcnRT', 
+            'Authorization': 'Api Key', 
             'Cookie': 'ASP.NET_SessionId=m5pa14qekipmfgjc3ksjrtnr'
           }
         };
@@ -141,7 +141,7 @@ console.log(olddate.toShortFormat(),"sdfs",newdate1.toShortFormat())
 //     method: 'get',
 //     url: 'http://api.apml.in/Reports.svc/ChallanDetailReport?THCStartDate='+olddate.toShortFormat()+'&THCEndDate='+newdate1.toShortFormat()+'&PageLimit=500&PageNumber=2',
 //     headers: { 
-//       'Authorization': 'Basic UmVwb3J0czpSZVAwcnRT', 
+//       'Authorization': 'Api Key', 
 //       'Cookie': 'ASP.NET_SessionId=m5pa14qekipmfgjc3ksjrtnr'
 //     }
 //   };
@@ -189,8 +189,7 @@ console.log(olddate.toShortFormat(),"sdfs",newdate1.toShortFormat())
           headers: {
             Authorization:
               "Bearer " +
-              "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDkyNDgyODksInVzZXJJZCI6ImNlZWMxMzkwLWUyZjUtNDZkMC1iOTBlLWNiN2NkNDEwNzU3MiIsImVtYWlsIjoiaW50ZWdyYXRpb25AYXBtbC5jb20iLCJtb2JpbGVOdW1iZXIiOiI5MDAwMDAwMDA0Iiwib3JnSWQiOiI0MDUyYWIyNC0wNTQzLTRjZDQtYjUxNy05ZTc4ZWZlZTRmZWQiLCJuYW1lIjoiQVBNTCBJbnRlZ3JhdGlvbiIsIm9yZ1R5cGUiOiJGTEVFVF9PV05FUiIsImlzR29kIjpmYWxzZSwicG9ydGFsVHlwZSI6ImJhc2ljIn0.WV8p9lLMRft2DfrzikLpp_zSJIwrBEp0U2Oy4IWkp6w //the token is a variable which holds the token",
-          },
+              "Api Key"},
         }
       )
       .then((res) => res.data);
@@ -236,8 +235,7 @@ client.on("message", async (message) => {
           headers: {
             Authorization:
               "Bearer " +
-              "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDkyNDgyODksInVzZXJJZCI6ImNlZWMxMzkwLWUyZjUtNDZkMC1iOTBlLWNiN2NkNDEwNzU3MiIsImVtYWlsIjoiaW50ZWdyYXRpb25AYXBtbC5jb20iLCJtb2JpbGVOdW1iZXIiOiI5MDAwMDAwMDA0Iiwib3JnSWQiOiI0MDUyYWIyNC0wNTQzLTRjZDQtYjUxNy05ZTc4ZWZlZTRmZWQiLCJuYW1lIjoiQVBNTCBJbnRlZ3JhdGlvbiIsIm9yZ1R5cGUiOiJGTEVFVF9PV05FUiIsImlzR29kIjpmYWxzZSwicG9ydGFsVHlwZSI6ImJhc2ljIn0.WV8p9lLMRft2DfrzikLpp_zSJIwrBEp0U2Oy4IWkp6w //the token is a variable which holds the token",
-          },
+              "Api Key" },
         }
       )
       .then((res) => res.data);
@@ -385,7 +383,7 @@ myobject={
 //       method: 'get',
 //       url: 'http://api.apml.in/Reports.svc/ChallanDetailReport?THCStartDate='+olddate.toShortFormat()+'&THCEndDate='+newdate1.toShortFormat()+'&PageLimit=500&PageNumber='+i,
 //       headers: { 
-//         'Authorization': 'Basic UmVwb3J0czpSZVAwcnRT', 
+//         'Authorization': 'Api Key', 
 //         'Cookie': 'ASP.NET_SessionId=m5pa14qekipmfgjc3ksjrtnr'
 //       }
 //     };
